@@ -23,3 +23,12 @@ The Compliance Checker API is a Django-based application that scrapes compliance
    ```bash
    git clone https://github.com/yourusername/compliance_checker.git
    cd compliance_checker
+
+## Testing
+1. **Bash**
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/check_compliance/ \
+-H "Content-Type: application/json" \
+-d '{"url": "https://mercury.com"}'
+
